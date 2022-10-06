@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.card img {
+.card .desk-image {
     width: 270px;
     height:400px;
     border-radius: 15px 0 0 15px;
@@ -91,4 +91,47 @@ button {
     position: relative;
     left: -4%;
     top: 5%;
+}
+.mob-image {
+    display: none;
+}
+@media (max-width: 590px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 340px;
+        height: 538px;
+        border-radius: 10px;
+    }
+    .desk-image {
+        display: none;
+    }
+    .mob-image {
+        width: 340px;
+        height:200px;
+        border-radius: 10px 10px 0 0;
+        display: block;
+    }
+    .card-content {
+        width: 340px;
+        padding-top: 25px;
+    }
+    button {
+        width: 290px;
+        height: 45px;
+    }
+    .money {
+        width: 210px;
+    }
+    .content-heading, .content,.green-money, button {
+        padding-top: 10px;
+    }
+    .add-cart {
+        top: -18%;
+    }
+    .svg {
+        top: -6%;
+    }
 }
